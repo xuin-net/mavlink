@@ -7345,6 +7345,18 @@
       <field type="uint8_t" name="num_ids">number of IDs in filter list</field>
       <field type="uint16_t[16]" name="ids">filter IDs, length num_ids</field>
     </message>
+  	<message id="8016" name="WK_SELFCHK_STATE">
+      <description>Custom self-check state for vehicle health monitoring.</description>
+      <field type="uint8_t" name="gps_healthy">GPS health status</field>
+      <field type="uint8_t" name="inav_healthy">Navigation health status</field>
+      <field type="uint8_t" name="compass_healthy">Compass health status</field>
+      <field type="uint8_t" name="battery_healthy">Battery health status</field>
+      <field type="uint8_t" name="imu_healthy">IMU health status</field>
+      <field type="uint8_t" name="gyro_calib_flag">Gyro calibration flag</field>
+      <field type="uint8_t" name="acc_calib_flag">Accelerometer calibration flag</field>
+      <field type="uint8_t" name="compass_calib_flag">Compass calibration flag</field>
+      <field type="uint8_t[5]" name="reserved">Reserved for future use</field>
+    </message>
     <!-- Rover specific messages -->
     <message id="9000" name="WHEEL_DISTANCE">
       <description>Cumulative distance traveled for each reported wheel.</description>
