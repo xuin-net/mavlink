@@ -282,7 +282,7 @@
       <field type="uint8_t" name="tx_session_pending">Transmission session pending</field>
       <field type="uint8_t" name="rx_session_pending">Receiving session pending</field>
     </message>
-    <message id="181" name="WK_SELFCHK_STATE">
+    <message id="8016" name="WK_SELFCHK_STATE">
       <description>Custom self-check state for vehicle health monitoring.</description>
       <field type="uint8_t" name="gps_healthy">GPS health status</field>
       <field type="uint8_t" name="inav_healthy">Navigation health status</field>
