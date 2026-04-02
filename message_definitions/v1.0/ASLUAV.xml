@@ -282,13 +282,17 @@
       <field type="uint8_t" name="tx_session_pending">Transmission session pending</field>
       <field type="uint8_t" name="rx_session_pending">Receiving session pending</field>
     </message>
-    <message id="8016" name="SENSOR_AIRFLOW_ANGLES">
-      <description>Calibrated airflow angle measurements</description>
-      <field type="uint64_t" name="timestamp" units="us">Timestamp</field>
-      <field type="float" name="angleofattack" units="deg">Angle of attack</field>
-      <field type="uint8_t" name="angleofattack_valid">Angle of attack measurement valid</field>
-      <field type="float" name="sideslip" units="deg">Sideslip angle</field>
-      <field type="uint8_t" name="sideslip_valid">Sideslip angle measurement valid</field>
+    <message id="181" name="WK_SELFCHK_STATE">
+      <description>Custom self-check state for vehicle health monitoring.</description>
+      <field type="uint8_t" name="gps_healthy">GPS health status</field>
+      <field type="uint8_t" name="inav_healthy">Navigation health status</field>
+      <field type="uint8_t" name="compass_healthy">Compass health status</field>
+      <field type="uint8_t" name="battery_healthy">Battery health status</field>
+      <field type="uint8_t" name="imu_healthy">IMU health status</field>
+      <field type="uint8_t" name="gyro_calib_flag">Gyro calibration flag</field>
+      <field type="uint8_t" name="acc_calib_flag">Accelerometer calibration flag</field>
+      <field type="uint8_t" name="compass_calib_flag">Compass calibration flag</field>
+      <field type="uint8_t[5]" name="reserved">Reserved for future use</field>
     </message>
   </messages>
 </mavlink>
